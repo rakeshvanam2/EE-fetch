@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blueviolet;
+}
+h2 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:rgb(184, 120, 40);
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: start;
+}
+.input{
+  height: 30px;
+  width: 300px;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  padding-right: 40px;
+ 
+}
+.input::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  padding-left:10px ;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.cocktail-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.cocktail-data li {
+  list-style-type: none;
+}
+.cocktail-data li img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+@media screen and (min-width: 760px) {
+  .cocktail-data {
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
